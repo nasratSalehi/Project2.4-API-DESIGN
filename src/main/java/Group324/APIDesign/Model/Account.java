@@ -7,13 +7,13 @@ public class Account {
     private String iban;
     private float balance;
     private AccountType accountType;
-    private User user;
+    /*private User user;*/
 
-    public Account(String iban, float balance, AccountType accountType, User user) {
+    public Account(String iban, float balance, AccountType accountType) {
         this.iban = iban;
         this.balance = balance;
         this.accountType = accountType;
-        this.user = user;
+
     }
 
     public String getIban() {
@@ -40,11 +40,4 @@ public class Account {
         this.accountType = accountType;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }
